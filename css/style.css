@@ -5,8 +5,8 @@
   margin-right: 16px;
   font-family: arial,sans-serif;
   font-size: 13px;
-  display: flex; /* Yana yaslamak için flexbox kullanıyoruz */
-  justify-content: flex-end; /* Listeyi sağa yasla */
+  display: flex; 
+  justify-content: flex-end;
 }
 
 .headerli a {
@@ -83,6 +83,7 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   line-height: 34px;
   height: 34px !important;
   display: block;
+  position: relative; 
 }
 
 .input {
@@ -164,10 +165,13 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   width: 100%;
   margin-left: -8px;
   line-height: 10px;
+  background-color: #f2f2f2; 
+  justify-content: space-between;
 }
 
 .footerli {
   float: left;
+  list-style-type: none;
 }
 
 .footerli a {
@@ -184,4 +188,16 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
 
 .footerli a:hover {
   text-decoration: underline;
+}
+.voice-search {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.voice-search img {
+  width: 20px;
+  height: 20px;
 }
